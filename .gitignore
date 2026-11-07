@@ -26,12 +26,17 @@
 
 # debug
 npm-debug.log*
+debug.log
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# feedback records can contain customer contact information
+/data/feedback-store.json
 
 # vercel
 .vercel
@@ -39,3 +44,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.neon
